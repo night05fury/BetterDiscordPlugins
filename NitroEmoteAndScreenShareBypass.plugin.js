@@ -57,7 +57,7 @@ module.exports = (() => {
 							cancelText: "Cancel",
 							onConfirm: async () => {
 								try {
-									const res = await fetch("https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js");
+									const res = await fetch("https://raw.githubusercontent.com/XxUnkn0wnxX/zerebos-BDPluginLibrary/master/release/0PluginLibrary.plugin.js");
 									if (!res.ok) throw new Error("Failed to fetch");
 									const body = await res.text();
 									await new Promise((r) =>
@@ -72,7 +72,7 @@ module.exports = (() => {
 									);
 								} catch (error) {
 									require("electron").shell.openExternal(
-										"https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js"
+										"https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/XxUnkn0wnxX/zerebos-BDPluginLibrary/master/release/0PluginLibrary.plugin.js"
 									);
 								}
 							},
